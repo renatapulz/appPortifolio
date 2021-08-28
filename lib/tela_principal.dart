@@ -169,7 +169,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
       floatingActionButton: FloatingActionButton(
         child: Icon(
           MyFlutterApp.whatsapp,
-        size: 40,
+        size: 49,
         ),
         onPressed: () {
           abrirWhatsApp();
