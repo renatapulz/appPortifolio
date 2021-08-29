@@ -58,112 +58,116 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                     vertical: 50,
                   ),
                   child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        CircleAvatar(
-                          radius: 75,
-                          backgroundColor: Color(0xFFF037A5),
-                          child: CircleAvatar(
-                            backgroundImage: AssetImage('imagens/imgperfil.jpeg'),
-                            radius: 70,
+                    child: Padding(
+                      padding:EdgeInsets.fromLTRB(40, 0, 0, 0),
+                      child: Column(
+                        children: [
+                          CircleAvatar(
+                            radius: 75,
+                            backgroundColor: Color(0xFFF037A5),
+                            child: CircleAvatar(
+                              backgroundImage: AssetImage('imagens/imgperfil.jpeg'),
+                              radius: 70,
+                            ),
                           ),
-                        ),
-                        Text(
-                          'Renata Pulz',
-                          style: TextStyle(
-                            fontSize: 35,
-                            fontFamily: 'PermanentMarker',
-                            color: Color(0xFFF8F8F8),
-                          ),
-                        ),
-                        Text(
-                          'Estudante Front-End / Mobile',
-                          style: TextStyle(
+                          Text(
+                            'Renata Pulz',
+                            style: TextStyle(
+                              fontSize: 35,
+                              fontFamily: 'PermanentMarker',
                               color: Color(0xFFF8F8F8),
-                              fontWeight: FontWeight.bold,
-                              fontFamily: 'SourceSansPro',
-                              fontSize: 18,
-                              letterSpacing: 1.5),
-                        ),
-                        SizedBox(
-                          height: 25,
-                          width: 280,
-                          child: Divider(
-                            color: Color(0xFFF8F8F8),
-                          ),
-                        ),
-                        Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                          color: Color(0xFFF8F8F8),
-                          margin: EdgeInsets.fromLTRB(70, 0, 30, 0),
-                          child: new InkWell(
-                            onTap: () {
-                              abrirGmail();
-                            },
-                            child: ListTile(
-                              leading: Icon(
-                                Icons.email,
-                                size: 30,
-                                color: Color(0xFFF037A5),
-                              ),
-                              title: Text(
-                                'renatadpulz@gmail.com',
-                                style: TextStyle(
-                                  fontFamily: 'SourceSansPro',
-                                  fontSize: 18,
-                                  color: Color(0xFFF037A5),
-                                  fontWeight: FontWeight.bold,
-                                ),
-                                textAlign: TextAlign.left,
-                              ),
                             ),
                           ),
-                        ),
-                        SizedBox(height: 20),
-                        Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15),
+                          Text(
+                            'Estudante Front-End / Mobile',
+                            style: TextStyle(
+                                color: Color(0xFFF8F8F8),
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'SourceSansPro',
+                                fontSize: 18,
+                                letterSpacing: 1.5),
                           ),
-                          color: Color(0xFFF8F8F8),
-                          margin: EdgeInsets.fromLTRB(70, 0, 30, 0),
-                          child: new InkWell(
-                            onTap: () {
-                              abrirUrl();
-                            },
-                            child: ListTile(
-                              leading: Tab(
-                                icon: Icon(
-                                  MyFlutterApp.linkedin,
-                                  size: 25,
-                                  color: Color(0xFFF037A5),
-                                ),
-                              ),
-                              title: Text(
-                                'Renata Pulz',
-                                style: TextStyle(
-                                  fontFamily: 'SourceSansPro',
-                                  fontSize: 18,
-                                  color: Color(0xFFF037A5),
-                                  fontWeight: FontWeight.bold,
-                                ),
-                                textAlign: TextAlign.left,
-                              ),
-                            ),
-                          ),
-                        ),
-                        Center(
-                          child: Padding(
-                            padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
-                            child: Lottie.network('https://assets7.lottiefiles.com/private_files/lf30_cuqnb4it.json',
-                              width: 300,
-                              height: 300,
 
+                      SizedBox(
+                              height: 25,
+                              width: 280,
+                              child: Divider(
+                                color: Color(0xFFF8F8F8),
+                              ),
+                            ),
+                          Card(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            color: Color(0xFFF8F8F8),
+                            margin: EdgeInsets.fromLTRB(45, 0, 30, 0),
+                            child: new InkWell(
+                              onTap: () {
+                                abrirGmail();
+                              },
+                              child: ListTile(
+                                leading: Icon(
+                                  Icons.email,
+                                  size: 30,
+                                  color: Color(0xFFF037A5),
+                                ),
+                                title: Text(
+                                  'renatadpulz@gmail.com',
+                                  style: TextStyle(
+                                    fontFamily: 'SourceSansPro',
+                                    fontSize: 18,
+                                    color: Color(0xFFF037A5),
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                  textAlign: TextAlign.left,
+                                ),
+                              ),
                             ),
                           ),
-                        )
-                      ],
+                          SizedBox(height: 20),
+                          Card(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            color: Color(0xFFF8F8F8),
+                            margin: EdgeInsets.fromLTRB(45, 0, 30, 0),
+                            child: new InkWell(
+                              onTap: () {
+                                abrirUrl();
+                              },
+                              child: ListTile(
+                                leading: Tab(
+                                  icon: Icon(
+                                    MyFlutterApp.linkedin,
+                                    size: 25,
+                                    color: Color(0xFFF037A5),
+                                  ),
+                                ),
+                                title: Text(
+                                  'Renata Pulz',
+                                  style: TextStyle(
+                                    fontFamily: 'SourceSansPro',
+                                    fontSize: 18,
+                                    color: Color(0xFFF037A5),
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                  textAlign: TextAlign.left,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Center(
+                            child: Padding(
+                              padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
+                              child: Lottie.network('https://assets7.lottiefiles.com/private_files/lf30_cuqnb4it.json',
+                                width: 300,
+                                height: 300,
+
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
