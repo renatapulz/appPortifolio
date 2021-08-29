@@ -55,6 +55,10 @@ class CollapsingNavigationDrawerState extends State<CollapsingNavigationDrawer>
                         currentSelectedIndex = counter;
                         // selectedIndex = counter;
                       });
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => navigationItems[counter].page),
+                      );
                     },
                     isSelected : currentSelectedIndex == counter,
                     title: navigationItems[counter].title,

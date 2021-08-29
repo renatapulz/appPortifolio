@@ -16,12 +16,9 @@ class Html extends StatefulWidget {
 
 class _HtmlState extends State<Html> {
   final imagens = <Imagens>[
-    Imagens('um', '../imagens/html/foto1.jpg',
-        'skcnsvbdjbv vasmvksdjvndskvksdvkdsnvkdsnvnivnjdncjsabjbshb ajsbjsahb jabj '),
-    Imagens('dois', '../imagens/html/foto2.png',
-        'skcnsvbdjbv vasmvksdjvndskvksdvkdsnvkdsnvnivnjdncjsabjbshb ajsbjsahb jabj '),
-    Imagens('três', '../imagens/html/foto3.jpeg',
-        'skcnsvbdjbv vasmvksdjvndskvksdvkdsnvkdsnvnivnjdncjsabjbshb ajsbjsahb jabj '),
+    Imagens('um', 'imagens/html/foto1.jpg', 'asdasdas'),
+    Imagens('dois', 'imagens/html/foto2.png', 'dfgdfgdfgfdg'),
+    Imagens('três', 'imagens/html/foto3.jpeg', 'jksdlk asdkljasd'),
   ];
 
   @override
@@ -36,10 +33,10 @@ class _HtmlState extends State<Html> {
               .map((e) => Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Image.network(
+                      Image.asset(
                         e.picture,
-                        width: 200,
-                        height: 200,
+                        width: 400,
+                        height: 500,
                       ),
                       Text(e.nome,
                           style: TextStyle(
