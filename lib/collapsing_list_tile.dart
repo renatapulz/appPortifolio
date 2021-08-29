@@ -8,7 +8,7 @@ class CollapsingListTile extends StatefulWidget {
 
   CollapsingListTile(
       {required this.title,
-      required this.icon,
+       required this.icon,
       required this.animationController});
 
   @override

@@ -50,7 +50,6 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
           elevation: 0,
          title: Text('Portifólio'),
        ),
-
         body: Stack(
           children: [
               SafeArea(
@@ -175,7 +174,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
       floatingActionButton: FloatingActionButton(
         child: Icon(
           MyFlutterApp.whatsapp,
-        size: 45,
+        size: 40,
         ),
         onPressed: () {
           abrirWhatsApp();

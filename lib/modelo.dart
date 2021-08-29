@@ -1,4 +1,4 @@
-
+import 'package:ionicons/ionicons.dart';
 import 'package:flutter/material.dart';
 
 class NavigationModel {
@@ -8,8 +8,8 @@ class NavigationModel {
 }
 
 List<NavigationModel> navigationItems = [
-  NavigationModel(title: 'HTML', icon: Icons.add),
-  NavigationModel(title: 'CSS', icon: Icons.add),
-  NavigationModel(title: 'JavaScript', icon: Icons.add),
-  NavigationModel(title: 'React Native', icon: Icons.add),
+  NavigationModel(title: 'HTML', icon: Ionicons.logo_html5),
+  NavigationModel(title: 'CSS', icon: Ionicons.logo_css3),
+  NavigationModel(title: 'JavaScript', icon: Ionicons.logo_javascript),
+  NavigationModel(title: 'React Native', icon: Ionicons.logo_react),
 ];

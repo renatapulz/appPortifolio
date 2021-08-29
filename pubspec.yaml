@@ -31,6 +31,7 @@ dependencies:
   whatsapp_unilink: ^2.0.0
   mailto: ^2.0.0
   lottie: ^1.0.1
+  ionicons: ^0.1.2
 
 dev_dependencies:
   flutter_test:

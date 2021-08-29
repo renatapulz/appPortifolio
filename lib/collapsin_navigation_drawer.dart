@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_card_flutter/modelo.dart';
 import 'package:my_card_flutter/theme.dart';
 import 'collapsing_list_tile.dart';
+import 'package:ionicons/ionicons.dart';
 
 class CollapsingNavigationDrawer extends StatefulWidget {
   @override
@@ -43,8 +44,8 @@ class CollapsingNavigationDrawerState extends State<CollapsingNavigationDrawer>
         children: [
           SizedBox(height: 50),
           CollapsingListTile(
-            title: 'Renata Pulz',
-            icon: Icons.person,
+            title: 'Galeria',
+             icon: Ionicons.folder_open_outline,
             animationController: _animationController,
           ),
           Expanded(
