@@ -18,6 +18,7 @@ class CollapsingNavigationDrawerState extends State<CollapsingNavigationDrawer>
   late AnimationController _animationController;
   late Animation<double> widthAnimation;
   int currentSelectedIndex = 0;
+  // int selectedIndex = 0;
 
   @override
   void initState() {
@@ -52,6 +53,7 @@ class CollapsingNavigationDrawerState extends State<CollapsingNavigationDrawer>
                     onTap: () {
                       setState(() {
                         currentSelectedIndex = counter;
+                        // selectedIndex = counter;
                       });
                     },
                     isSelected : currentSelectedIndex == counter,
