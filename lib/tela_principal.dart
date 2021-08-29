@@ -3,8 +3,8 @@ import 'package:lottie/lottie.dart';
 import './my_flutter_app_icons.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp_unilink/whatsapp_unilink.dart';
+import 'menu_lateral/collapsin_navigation_drawer.dart';
 
-import 'collapsin_navigation_drawer.dart';
 
 class TelaPrincipal extends StatefulWidget {
   @override
