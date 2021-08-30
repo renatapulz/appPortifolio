@@ -115,7 +115,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                                   'renatadpulz@gmail.com',
                                   style: TextStyle(
                                     fontFamily: 'SourceSansPro',
-                                    fontSize: 18,
+                                    fontSize: 17,
                                     color: Color(0xFFF037A5),
                                     fontWeight: FontWeight.bold,
                                   ),

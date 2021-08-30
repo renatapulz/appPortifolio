@@ -16,9 +16,12 @@ class Javascript extends StatefulWidget {
 
 class _JavascriptState extends State<Javascript> {
   final imagens = <Imagens>[
-    Imagens('um', 'imagens/html/foto1.jpg', 'asdasdas'),
-    Imagens('dois', 'imagens/html/foto2.png', 'dfgdfgdfgfdg'),
-    Imagens('três', 'imagens/html/foto3.jpeg', 'jksdlk asdkljasd'),
+    Imagens('Projeto Soul Calc', 'imagens/javascript/js1.png', 'Função que controla o tamanho do texto e slider.'),
+    Imagens('Projeto Soul Calc', 'imagens/javascript/js2.png', 'Função que faz o dark mode(tema escuro) e o início da conversão.'),
+    Imagens('Projeto Soul Calc', 'imagens/javascript/js3.png', 'Funções de conversão (temperatura e moeda).'),
+    Imagens('Projeto Soul Calc', 'imagens/javascript/js4.png', 'Função da calculadora'),
+    Imagens('Projeto Soul Calc', 'imagens/javascript/js5.png', 'Função da calculadora'),
+    Imagens('Projeto Soul Calc', 'imagens/javascript/js6.png', 'Função da calculadora'),
   ];
 
   @override
@@ -32,12 +35,12 @@ class _JavascriptState extends State<Javascript> {
           items: imagens
               .map(
                 (e) => Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Image.asset(
                       e.picture,
-                      width: 400,
-                      height: 500,
+                      width: 450,
+                      height:550,
                     ),
                     Text(e.nome,
                         style: TextStyle(
@@ -56,7 +59,7 @@ class _JavascriptState extends State<Javascript> {
               )
               .toList(),
           options: CarouselOptions(
-            height: 800,
+            height: 950,
             enlargeCenterPage: true,
             enableInfiniteScroll: false,
             autoPlay: true,
