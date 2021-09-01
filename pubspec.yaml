@@ -34,6 +34,7 @@ dependencies:
   ionicons: ^0.1.2
   carousel_slider: ^4.0.0
   video_player: ^2.1.14
+  animated_icon_button: ^1.0.2
 
 dev_dependencies:
   flutter_test:

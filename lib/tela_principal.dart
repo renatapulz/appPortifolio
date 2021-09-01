@@ -11,34 +11,12 @@ class TelaPrincipal extends StatefulWidget {
   _TelaPrincipalState createState() => _TelaPrincipalState();
 }
 
-abrirUrl() async {
-  const url = 'https://www.linkedin.com/in/renata-pulz-781aa2191/';
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Erro ao entrar na página';
-  }
-}
 
 abrirWhatsApp() async {
   final link = WhatsAppUnilink(
     phoneNumber: '+55-(048)988510827',
   );
   await launch('$link');
-}
-
-abrirGmail() async {
-  final Uri params = Uri(
-    scheme: 'mailto',
-    path: 'renatadpulz@gmail.com',
-    query: 'subject=Mensagem&body=Olá Renata!!',
-  );
-  String url = params.toString();
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    print('Erro ao acessar o email $url');
-  }
 }
 
 
@@ -59,7 +37,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                   ),
                   child: SingleChildScrollView(
                     child: Padding(
-                      padding:EdgeInsets.fromLTRB(40, 0, 0, 0),
+                      padding:EdgeInsets.fromLTRB(40, 50, 0, 0),
                       child: Column(
                         children: [
                           CircleAvatar(
@@ -89,80 +67,19 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                           ),
 
                       SizedBox(
-                              height: 25,
+                              height: 45,
                               width: 280,
                               child: Divider(
                                 color: Color(0xFFF8F8F8),
                               ),
                             ),
-                          Card(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15),
-                            ),
-                            color: Color(0xFFF8F8F8),
-                            margin: EdgeInsets.fromLTRB(45, 0, 30, 0),
-                            child: new InkWell(
-                              onTap: () {
-                                abrirGmail();
-                              },
-                              child: ListTile(
-                                leading: Icon(
-                                  Icons.email,
-                                  size: 30,
-                                  color: Color(0xFFF037A5),
-                                ),
-                                title: Text(
-                                  'renatadpulz@gmail.com',
-                                  style: TextStyle(
-                                    fontFamily: 'SourceSansPro',
-                                    fontSize: 17,
-                                    color: Color(0xFFF037A5),
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                  textAlign: TextAlign.left,
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(height: 20),
-                          Card(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15),
-                            ),
-                            color: Color(0xFFF8F8F8),
-                            margin: EdgeInsets.fromLTRB(45, 0, 30, 0),
-                            child: new InkWell(
-                              onTap: () {
-                                abrirUrl();
-                              },
-                              child: ListTile(
-                                leading: Tab(
-                                  icon: Icon(
-                                    MyFlutterApp.linkedin,
-                                    size: 25,
-                                    color: Color(0xFFF037A5),
-                                  ),
-                                ),
-                                title: Text(
-                                  'Renata Pulz',
-                                  style: TextStyle(
-                                    fontFamily: 'SourceSansPro',
-                                    fontSize: 18,
-                                    color: Color(0xFFF037A5),
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                  textAlign: TextAlign.left,
-                                ),
-                              ),
-                            ),
-                          ),
+                          Text('Bem vindo ao meu portfólio!!', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white,),),
                           Center(
                             child: Padding(
                               padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
                               child: Lottie.network('https://assets7.lottiefiles.com/private_files/lf30_cuqnb4it.json',
                                 width: 300,
                                 height: 300,
-
                               ),
                             ),
                           )
